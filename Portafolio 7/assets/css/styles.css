@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root{
+    --background-body: #020403 ;
+    --letter: #adadad ;
+    --tittles: #ffffff ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Rubik', sans-serif;;
+    
+}
+header{
+    position: relative;
+    background-color: var(--background-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    font-size: 2rem;
+    color: var(--tittles);
+   
+    
+}
+header h2{
+    font-size: 1.4rem;
+    color: var(--letter);
+    font-weight: medium;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    justify-content: flex-end;
+    height: 60px;
+    border-bottom: 1px solid black;
+    margin-bottom: .25rem;
+    color: var(--tittles);
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding: .5rem;
+    
+}
+li{
+    padding:.5rem;
+    
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--tittles);
+    font-size: smaller;
+}
+.curly1, .curly2{   
+
+width: 100vw;
+
+}
+.curly1{
+    margin-bottom: 10rem;
+}
+
+.photo{
+    
+    height: 30%;
+    width: 30%;
+    border-radius: 15%;
+    position: absolute;
+    background-color: blueviolet;
+    
+    top: 12%
+}
+.image{
+    width: 100%;
+    object-fit: fills;
+    
+    
+}
+.presentation{
+    width: 100vw;
+    height: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 25%;
+}
+
+.linkedin, .instagram, .twitter{
+  margin: .5rem .75rem;
+   height: 2rem;
+   width: 2rem;
+}
+.aboutMe{
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--background-body);
+    color: var(--tittles);
+}
+.aboutMe > h2{
+    font-size: 1.4rem; 
+    margin-bottom: 1rem;    
+}
+.aboutMe > p{
+    font-size: .8rem   ;
+}
+.skillsSection{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-body);
+    color: var(--tittles);
+    padding-top: 1rem;
+}
+.skillsSection > h2{
+    font-size: 1.4rem; 
+    padding: 1.5rem 0 1.5rem  1.5rem ;
+
+}
+.contentSkills{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    column-gap: 2rem;
+    
+    
+}
+.skill{
+    background-color: aqua;
+    padding: 1.5rem 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.skill > img{
+    padding: 1rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--letter);
+    
+}
+.skill > h6{
+    margin-top: .3rem;
+}
+.line-time{
+    display: grid;
+    grid-template-columns: auto auto;
+}
