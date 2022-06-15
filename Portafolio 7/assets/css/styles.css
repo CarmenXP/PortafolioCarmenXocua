@@ -9,7 +9,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:  'Rubik', sans-serif;;
+    font-family:  'Rubik', sans-serif;
+   
     
 }
 header{
@@ -40,7 +41,9 @@ nav{
     border-bottom: 1px solid black;
     margin-bottom: .25rem;
     color: var(--tittles);
+    width: 100vw;
 }
+
 ul{
     display: flex;
     list-style: none;
@@ -59,6 +62,7 @@ nav > ul > li > a{
 .curly1, .curly2{   
 
 width: 100vw;
+background-color: none;
 
 }
 .curly1{
@@ -67,19 +71,18 @@ width: 100vw;
 
 .photo{
     
-    height: 30%;
-    width: 30%;
+    height: 32%;
+    width: 27.5%;
     border-radius: 15%;
     position: absolute;
-    background-color: blueviolet;
-    
-    top: 12%
+    background-color: none; 
+    top: 13%
 }
 .image{
     width: 100%;
     object-fit: fills;
-    
-    
+    border-radius: 40%;
+    height: 100%;    
 }
 .presentation{
     width: 100vw;
@@ -89,7 +92,8 @@ width: 100vw;
     align-items: center;
     flex-direction: column;
     position: absolute;
-    bottom: 25%;
+    bottom: 22%;
+    background-color: none;
 }
 
 .linkedin, .instagram, .twitter{
@@ -101,6 +105,7 @@ width: 100vw;
     text-align: center;
     padding: 1.5rem 2rem;
     background-color: var(--background-body);
+    color: var(--tittles);
     color: var(--tittles);
 }
 .aboutMe > h2{
@@ -131,24 +136,241 @@ width: 100vw;
     
 }
 .skill{
-    background-color: aqua;
+   
     padding: 1.5rem 0 ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    text-align: center;
 }
 .skill > img{
     padding: 1rem;
     width: 5rem;
     border-radius: 50%;
-    background-color: var(--letter);
+    background-color: rgb(37, 34, 34);
     
+}
+.skill i{
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgb(37, 34, 34);
+}
+.bx{
+   font-size: xx-large; 
+   font-weight: 400;
+   width: 100%;
 }
 .skill > h6{
     margin-top: .3rem;
+    font-size: small;
+}
+.experience{
+    background-color: var(--background-body);
+
+}
+.experience>h2{
+    font-size: 1.4rem; 
+    padding: 2rem; 
+    color: var(--tittles);
 }
 .line-time{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    color: var(--tittles);
+}
+
+.line-time > p{
+    border-bottom: 1px solid black;
+    padding: .5rem .5rem ;
+}
+.portafolio{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 90%;
+    row-gap: 2rem;
+    justify-content: center;
+    background-color: var(--background-body);
+    
+}
+.portafolio>h2{
+    font-size: 1.4rem;  
+    
+}
+.project > img{
+    width: 100%;
+}
+.contact{
+    background-color: var(--background-body);
+    color: var(--tittles);
+}
+.contact > h2{
+    font-size: 1.4rem; 
+    padding: 1rem 0 0 2rem;
+
+
+}
+.myContac{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem 0 3rem  0;
+}
+
+
+.cardContac{
+  text-align: center; 
+}
+.cardContac > p{
+    font-size: small;
+    
+}
+.cardContac > img{
+    background-color: rgb(37, 34, 34);
+    padding: .9rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+footer{
+    text-align: center;
+    background-color: var(--background-body);
+    color: var(--tittles);
+}
+footer > p{
+    font-size: medium;
+    padding: 2rem ;
+}
+
+@media screen and ( min-width:500px ){
+    .photo{
+    
+        height: 35%;
+        width: 28%;
+        border-radius: 15%;    
+        top: 12%
+    }
+    .image{
+        width: 100%;
+        object-fit: fills;
+        border-radius: 35%;
+        height: 100%;    
+    }
+    .presentation{
+       bottom: 20%;
+    }
+    header h1{
+        font-size: 2.1rem;    
+    }
+    .aboutMe > p{
+        font-size: .8rem;
+        line-height: 1.3rem;
+        word-spacing: 1.1 rem;
+    }
+}
+@media screen and ( min-width:620px ){
+    header h1{
+        font-size: 2.4rem;    
+    }
+    header h2{
+      font-size: 1.6rem;
+    }
+    .aboutMe h2, .experience h2, .contact h2, .portafolio h2, .skillsSection h2 {
+        font-size: 1.75rem; 
+        margin-bottom: 1rem;    
+    }
+    .cardContac > img{
+        background-color: #adadad;
+        padding: 1.5rem;
+        border-radius: 50%;
+        margin-bottom: .7rem;
+    }
+    .cardContac > small{
+        font-size:1rem;
+        
+    }
+    .skill > h6{
+        font-size: medium;
+    }
+    
+}    
+    @media screen and ( min-width:720px ){
+        .photo{
+        height: 35%;
+        width: 24%;
+        border-radius: 15%;
+        position: absolute;
+        
+        top: 9%
+        }
+        .presentation{
+            bottom: 20%;
+         }
+         header h1{
+            font-size: 2.5rem;  
+            
+        }
+        header h2{
+            font-size: 1.6rem;
+            
+        }
+        .linkedin, .instagram, .twitter{
+            margin: .5rem 1rem;
+             height: 2.3rem;
+             width: 2.3rem;
+        }
+        .skill > img{
+            padding: 1.5rem;
+            width: 8rem;   
+        }
+        .aboutMe > p{
+            font-size: .9rem;
+            line-height: 1.3rem;
+            word-spacing: 1.1 rem;
+        }
+        .skill i{
+            padding: 2.5rem;
+            width: 8rem;
+            height: 8rem;
+        }
+        
+        footer > p{
+            font-size: large;
+            
+        }
+    }
+@media screen and ( min-width:920px ){
+    .photo{
+    
+        height: 33%;
+        width: 22%;
+        border-radius: 15%;
+        position: absolute;
+     
+        top: 11%
+    }
+    .presentation{
+        bottom: 22%;
+     }
+     header h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+        word-spacing: .5rem;
+        
+    }
+    header h2{
+        font-size: 1.9rem;
+        margin: .5rem;
+    }
+    .linkedin, .instagram, .twitter{
+        margin: .5rem 1rem;
+         height: 2.5rem;
+         width: 2.5rem;
+      }
+      footer > p{
+        font-size: larger;
+        
+    }  
 }
